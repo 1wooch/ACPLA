@@ -5,8 +5,8 @@ import "../css/StudyPlanner.css";
 
 
 const YourComponent = () => {
-  //const [courseCode, setCourseCode] = useState('');
-  const courseCode='';
+  const [courseCode, setCourseCode] = useState('');
+  //const courseCode='';
   const [courseData, setCourseData] = useState(null);
   const [degreeData, setDegreeData] = useState(null);
   const [cellCourseData, setCellCourseData] = useState({});
@@ -18,9 +18,12 @@ const YourComponent = () => {
   const [selectedDegree, setSelectedDegree] = useState('');
   const [selectedUniversity, setSelectedUni] = useState('');
 
-  //const [RequisiteList, setRequisiteList] = useState([]);
-  const RequisiteList=[];
+  const [RequisiteList, setRequisiteList] = useState([]);
+  //const RequisiteList=useState([]);
   const [showAddRowButton, setShowAddRowButton] = useState(false); // Add state to control the visibility of the button
+
+
+  
 
   const testValue = () => {
     console.log('testing ongoing');
@@ -347,6 +350,7 @@ const YourComponent = () => {
   //////////
   useEffect(() => {
     console.log('RequisiteList:', RequisiteList);
+  
   }, [RequisiteList]);
 
 
