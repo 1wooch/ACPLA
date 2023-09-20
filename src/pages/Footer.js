@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react'; //, { useState }
 import '../css/footer.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  // const [email, setEmail] = useState('');
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  // const handleEmailChange = (e) => {
+  //   setEmail(e.target.value);
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission logic here
+  // };
 
   return (
     <div className="footer">
@@ -28,10 +28,10 @@ const Footer = () => {
         <div className="social-media">
           <h4>Social</h4>
           <p>
-            <a href="#"><i className="fab fa-linkedin"></i> Linkedin</a>
+            <a href="www.linkedin.com"><i className="fab fa-linkedin"></i> Linkedin</a>
           </p>
           <p>
-            <a href="#"><i className="fab fa-twitter"></i> Twitter</a>
+            <a href="www.twitter.com"><i className="fab fa-twitter"></i> Twitter</a>
           </p>
           <p>
             <a href="https://github.com/farazc60"><i className="fab fa-github"></i> Github</a>
@@ -45,18 +45,18 @@ const Footer = () => {
         </div>
         <div className="links">
           <h4>Quick links</h4>
-          <p><a href="#">Home</a></p>
-          <p><a href="#">About</a></p>
-          <p><a href="#">Blogs</a></p>
-          <p><a href="#">Contact</a></p>
+          <p><a href="home">Home</a></p>
+          <p><a href="about">About</a></p>
+          <p><a href="blogs">Blogs</a></p>
+          <p><a href="contact">Contact</a></p>
         </div>
         <div className="details">
           <h4>Company</h4>
           <p>Education Planning, Assurance, and Academic Success.</p>
           <h5>GENERAL COUNSEL & LEGAL</h5>
-          <p><a href="#">legal@mcintoshsydney.com</a></p>
+          <p><a href="legalsomething">legal@mcintoshsydney.com</a></p>
           <h5 className="mail">ENGINEERING</h5>
-          <p><a href="#">engineering@mcintoshsydney.com</a></p>
+          <p><a href="engineer">engineering@mcintoshsydney.com</a></p>
         </div>
       </div>
       <footer>
