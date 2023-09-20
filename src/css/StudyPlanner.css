@@ -1,0 +1,124 @@
+body {
+  background-color: #371b59;
+  font-family: "Century Gothic", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+
+.optionPart {
+  position: sticky;
+  top: 0;
+  background-color: #371b59;
+  padding: 20px;
+  color: white; /* Updated to white */
+  height: 1000px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-success {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #0069d9;
+}
+
+.modal-header {
+  background-color: #371b59;
+  color: white;
+}
+
+.modal-footer {
+  background-color: #f1f1f1;
+}
+
+.modal-content {
+  background-color: #f1f1f1;
+}
+
+.modal-body p {
+  margin-bottom: 5px;
+}
+
+.modal-body h4 {
+  margin-bottom: 10px;
+}
+
+.optionPart select {
+  color: black; /* Set the font color for the dropdown */
+}
+
+.cell-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.cell {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid purple;
+  background-color: white;
+  color: black;
+}
+
+.delete-button:hover {
+  background-color: #dc3545;
+}
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  height: 50px;
+  width:75px;
+}
+.semester-info {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 48px; /* Adjust the font size as desired */
+  font-weight: bold;
+}
+
+.btn-clear{
+  background-color: #a08fec;
+  color: white;
+  height: 30px;
+  width:50px;
+  border-radius: 5%;
+}
+.submitButton{
+  background-color: #f0eff2;
+  color: black;
+  height: 30px;
+  width:70px; 
+  border-radius: 5%;
+}
+.AddRowButton{
+  background-color: #f0eff2;
+  color: black;
+  height: 30px;
+  width:79px; 
+  border-radius: 5%;
+  text-align: center;
+}
+.sidecolor{
+  background-color: #371b59;
+  color: #371b59;
+}

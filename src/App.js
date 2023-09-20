@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"; //for router purpose
+
+import Main from './pages/Main';
+import GPAcalculator from './pages/GPAcalculator';
+import StudyPlanner from './pages/StudyPlanner';
+import Layout from './pages/Layout';
+import Navbar from './pages/Navbar';
+import Footer from './pages/Footer';
+import Review from './pages/Review'; //for the rating
+//for the tailwind?
+import 'tailwindcss/tailwind.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div>
+     <Navbar/>
+      <Routes>
+      <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Main />} />
+          <Route path="GPAcalculator" element={<GPAcalculator />} />
+          <Route path="StudyPlanner" element={<StudyPlanner />} />
+          <Route path="Review" element={<Review />} />
+
+        </Route>
+      </Routes>
+      <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 

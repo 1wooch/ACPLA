@@ -1,0 +1,43 @@
+/* Navbar Styles */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.navbar {
+    background-color: #371B59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-color: #371B59;
+  }
+  
+  /* Navbar Title Styles */
+  .navbar-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: auto;
+  }
+  
+  /* Navbar Link Styles */
+  .navbar-link {
+    /* font-family: 'Century Gothic', sans-serif; */
+    font-family: 'Century Gothic';
+
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  /* Navbar List Styles */
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navbar Item Styles */
+  .navbar-item {
+    margin-right: 1rem;
+  }
+  
