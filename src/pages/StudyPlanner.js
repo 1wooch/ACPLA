@@ -5,7 +5,8 @@ import "../css/StudyPlanner.css";
 
 
 const YourComponent = () => {
-  const [courseCode, setCourseCode] = useState('');
+  //const [courseCode, setCourseCode] = useState('');
+  const courseCode='';
   const [courseData, setCourseData] = useState(null);
   const [degreeData, setDegreeData] = useState(null);
   const [cellCourseData, setCellCourseData] = useState({});
@@ -17,8 +18,8 @@ const YourComponent = () => {
   const [selectedDegree, setSelectedDegree] = useState('');
   const [selectedUniversity, setSelectedUni] = useState('');
 
-  const [RequisiteList, setRequisiteList] = useState([]);
-
+  //const [RequisiteList, setRequisiteList] = useState([]);
+  const RequisiteList=[];
   const [showAddRowButton, setShowAddRowButton] = useState(false); // Add state to control the visibility of the button
 
   const testValue = () => {
@@ -85,22 +86,22 @@ const YourComponent = () => {
     testValue();
   }, [setSelectedDegree]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('test this working');
-    fetchData();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('test this working');
+  //   fetchData();
 
-    // Create JSON object
-    const jsonObject = {
-      courseCode,
-      selectYear,
-      selectSemester,
-      selectedDegree,
-      courseData,
-      degreeData,
-    };
-    console.log('JSON Object:', jsonObject);
-  };
+  //   // Create JSON object
+  //   const jsonObject = {
+  //     courseCode,
+  //     selectYear,
+  //     selectSemester,
+  //     selectedDegree,
+  //     courseData,
+  //     degreeData,
+  //   };
+  //   console.log('JSON Object:', jsonObject);
+  // };
 
   const coreCourses = degreeData
     ? degreeData.programCourseLists.coreCourseLists.courseListTables
